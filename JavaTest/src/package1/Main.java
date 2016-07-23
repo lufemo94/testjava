@@ -1,10 +1,11 @@
 package package1;
 
+import package2.Calc;
+
 public class Main {
 	private static void printMessage(){
 		System.out.println("Hello world");
 		System.out.println("How are you?");
-		System.out.println("2 + 2 = " + sum(2, 2));
 	}
 
 	public static void main(String[] args) {
@@ -13,9 +14,11 @@ public class Main {
 		Animal horse = new Animal("horse", "pangare");
 		System.out.println(pig);
 		System.out.println(horse);
+		testCalcs();
 	}
 	
-	public static int sum(int a, int b){
-		return a+b;
+	private static void testCalcs(){
+		System.out.println("2 + 2 = " + Calc.sum(2, 2));
+		System.out.println("2^3 = " + Calc.pow(2, 3));
 	}
 }

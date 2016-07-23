@@ -9,8 +9,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		printMessage();
-		Animal pig = new Animal("pig");
-		Animal horse = new Animal("horse");
+		Animal pig = new Animal("pig", "didi");
+		Animal horse = new Animal("horse", "pangare");
 		System.out.println(pig);
 		System.out.println(horse);
 	}

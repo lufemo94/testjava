@@ -7,6 +7,11 @@ public class Main {
 
 	public static void main(String[] args) {
 		printMessage();
+		Animal pig = new Animal("pig");
+		Animal horse = new Animal("horse");
+		System.out.println(pig);
+		System.out.println(horse);
 	}
-
+	
+	
 }
